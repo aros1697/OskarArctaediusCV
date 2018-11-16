@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F31939D0219EDECB003F1625 /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31939CF219EDECB003F1625 /* Experience.swift */; };
+		F31939D2219EE1F6003F1625 /* ExperienceLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31939D1219EE1F6003F1625 /* ExperienceLine.swift */; };
+		F31939D4219EE61D003F1625 /* ExperienceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31939D3219EE61D003F1625 /* ExperienceTableViewController.swift */; };
+		F31939D6219EEF11003F1625 /* ExperienceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31939D5219EEF11003F1625 /* ExperienceTableViewCell.swift */; };
 		F3789A72219C2A5500CC62EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3789A71219C2A5500CC62EE /* AppDelegate.swift */; };
 		F3789A74219C2A5500CC62EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3789A73219C2A5500CC62EE /* ViewController.swift */; };
 		F3789A77219C2A5500CC62EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3789A75219C2A5500CC62EE /* Main.storyboard */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F31939CF219EDECB003F1625 /* Experience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experience.swift; sourceTree = "<group>"; };
+		F31939D1219EE1F6003F1625 /* ExperienceLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceLine.swift; sourceTree = "<group>"; };
+		F31939D3219EE61D003F1625 /* ExperienceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceTableViewController.swift; sourceTree = "<group>"; };
+		F31939D5219EEF11003F1625 /* ExperienceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceTableViewCell.swift; sourceTree = "<group>"; };
 		F3789A6E219C2A5500CC62EE /* OskarArctaediusCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OskarArctaediusCV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3789A71219C2A5500CC62EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3789A73219C2A5500CC62EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +43,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F31939CE219EDEA5003F1625 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F31939CF219EDECB003F1625 /* Experience.swift */,
+				F31939D1219EE1F6003F1625 /* ExperienceLine.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F3789A65219C2A5500CC62EE = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +73,9 @@
 			children = (
 				F3789A71219C2A5500CC62EE /* AppDelegate.swift */,
 				F3789A73219C2A5500CC62EE /* ViewController.swift */,
+				F31939D5219EEF11003F1625 /* ExperienceTableViewCell.swift */,
+				F31939D3219EE61D003F1625 /* ExperienceTableViewController.swift */,
+				F31939CE219EDEA5003F1625 /* Model */,
 				F3789A75219C2A5500CC62EE /* Main.storyboard */,
 				F3789A78219C2A5600CC62EE /* Assets.xcassets */,
 				F3789A7A219C2A5600CC62EE /* LaunchScreen.storyboard */,
@@ -135,8 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F31939D0219EDECB003F1625 /* Experience.swift in Sources */,
 				F3789A74219C2A5500CC62EE /* ViewController.swift in Sources */,
 				F3789A72219C2A5500CC62EE /* AppDelegate.swift in Sources */,
+				F31939D2219EE1F6003F1625 /* ExperienceLine.swift in Sources */,
+				F31939D4219EE61D003F1625 /* ExperienceTableViewController.swift in Sources */,
+				F31939D6219EEF11003F1625 /* ExperienceTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
