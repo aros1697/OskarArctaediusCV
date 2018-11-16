@@ -11,24 +11,29 @@ import UIKit
 class ExperienceTableViewController: UITableViewController {
 
     
-    var experiences = ExperienceLine.getExperienceLine()[0].experiences
+    var experienceLines: [ExperienceLine] = ExperienceLine.getExperienceLine()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return experienceLines.count
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return experiences.count
+        return experienceLines[section].experiences.count
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ExperienceCell", for: indexPath) as! ExperienceTableViewCell
+        let experienceLine = experienceLines[indexPath.section]
+        let experiences = experienceLine.experiences
         let experience = experiences[indexPath.row]
         cell.experience = experience
         return cell
     }
-    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let experienceLine = experienceLines[section]
+        return experienceLine.name
+    }
 }
