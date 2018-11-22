@@ -13,8 +13,8 @@ class ExperienceTableViewCell: UITableViewCell {
 
     @IBOutlet weak var experienceImageView: UIImageView!
     @IBOutlet weak var experienceTitleLabe: UILabel!
-    @IBOutlet weak var experienceDescriptionLable: UILabel!
- 
+    @IBOutlet weak var experienceDurationLable: UILabel!
+    
     
     var experience: Experience?{
         didSet {
@@ -26,7 +26,7 @@ class ExperienceTableViewCell: UITableViewCell {
     func updateUI(){
         experienceImageView?.image = experience?.image
         experienceTitleLabe?.text = experience?.title
-        experienceDescriptionLable?.text = experience?.description
+        experienceDurationLable?.text = experience?.duration
     }
     
     

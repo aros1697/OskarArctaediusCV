@@ -11,10 +11,12 @@ import UIKit
 class Experience {
     var image: UIImage
     var title: String
+    var duration: String
     var description: String
     
-    init(titled: String, description: String, imageName: String){
+    init(titled: String, duration:String, description: String,  imageName: String){
         self.title = titled
+        self.duration = duration
         self.description = description
         if let image = UIImage(named: imageName){
             self.image = image

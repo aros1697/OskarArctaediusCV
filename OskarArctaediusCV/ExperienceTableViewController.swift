@@ -36,4 +36,18 @@ class ExperienceTableViewController: UITableViewController {
         let experienceLine = experienceLines[section]
         return experienceLine.name
     }
+    var selectedExperience: Experience?
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let experienceLine = experienceLines[indexPath.section]
+        let experience = experienceLine.experiences[indexPath.row]
+        selectedExperience = experience
+        performSegue(withIdentifier: "ShowExperienceDetail", sender: nil)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowExperienceDetail"{
+            let experienceDetailTVC = segue.destination as! ExperienceDetailTableViewController
+            experienceDetailTVC.experience = selectedExperience
+        }
+    }
 }
