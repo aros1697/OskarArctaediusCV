@@ -177,7 +177,6 @@
                                 </tableViewCellContentView>
                                 <inset key="separatorInset" minX="111" minY="0.0" maxX="11" maxY="0.0"/>
                                 <connections>
-                                    <outlet property="experienceDescriptionLable" destination="g8f-qh-nCk" id="o5E-Xi-IUx"/>
                                     <outlet property="experienceDurationLable" destination="g8f-qh-nCk" id="Imr-H4-00Q"/>
                                     <outlet property="experienceImageView" destination="Awi-qH-BSs" id="bUV-ja-iBn"/>
                                     <outlet property="experienceTitleLabe" destination="cYG-NQ-MsD" id="gW9-e5-JHp"/>
