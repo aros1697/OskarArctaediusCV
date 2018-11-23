@@ -18,6 +18,7 @@
 		F3789A79219C2A5600CC62EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3789A78219C2A5600CC62EE /* Assets.xcassets */; };
 		F3789A7C219C2A5600CC62EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3789A7A219C2A5600CC62EE /* LaunchScreen.storyboard */; };
 		F3F82E0621A8353200BB9B80 /* SkillsAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F82E0521A8353200BB9B80 /* SkillsAnimation.swift */; };
+		F3F82E0921A84E3200BB9B80 /* SkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F82E0821A84E3200BB9B80 /* SkillsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		F3789A7B219C2A5600CC62EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3789A7D219C2A5600CC62EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3F82E0521A8353200BB9B80 /* SkillsAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsAnimation.swift; sourceTree = "<group>"; };
+		F3F82E0821A84E3200BB9B80 /* SkillsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				F3789A73219C2A5500CC62EE /* ViewController.swift */,
+				F3F82E0821A84E3200BB9B80 /* SkillsViewController.swift */,
 				F31939D3219EE61D003F1625 /* ExperienceTableViewController.swift */,
 				F36905BA21A718DA00D0EB14 /* ExperienceDetailTableViewController.swift */,
 			);
@@ -173,6 +176,7 @@
 				F31939D0219EDECB003F1625 /* Experience.swift in Sources */,
 				F3F82E0621A8353200BB9B80 /* SkillsAnimation.swift in Sources */,
 				F3789A74219C2A5500CC62EE /* ViewController.swift in Sources */,
+				F3F82E0921A84E3200BB9B80 /* SkillsViewController.swift in Sources */,
 				F3789A72219C2A5500CC62EE /* AppDelegate.swift in Sources */,
 				F31939D2219EE1F6003F1625 /* ExperienceLine.swift in Sources */,
 				F31939D4219EE61D003F1625 /* ExperienceTableViewController.swift in Sources */,

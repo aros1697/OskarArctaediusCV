@@ -320,7 +320,7 @@
         <!--Skills-->
         <scene sceneID="P9j-o6-fkC">
             <objects>
-                <viewController title="Skills" id="IVz-ce-ttY" customClass="ViewController" customModule="OskarArctaediusCV" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Skills" id="IVz-ce-ttY" customClass="SkillsViewController" customModule="OskarArctaediusCV" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0yh-zK-I0Q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -339,7 +339,7 @@
                         <viewLayoutGuide key="safeArea" id="6El-FZ-pwY"/>
                     </view>
                     <connections>
-                        <outlet property="skillsImageView" destination="X9n-qP-BD7" id="O4a-Kw-bJm"/>
+                        <outlet property="skillsImageView" destination="X9n-qP-BD7" id="wHg-Cz-plW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kjZ-s6-ec2" userLabel="First Responder" sceneMemberID="firstResponder"/>
