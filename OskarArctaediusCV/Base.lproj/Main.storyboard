@@ -116,7 +116,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Oskar Arctaedius" id="57a-IP-09J"/>
+                    <navigationItem key="navigationItem" title="Oskar Arctaedius" id="57a-IP-09J">
+                        <barButtonItem key="backBarButtonItem" title="Oskar" id="7si-gd-7R2"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="experienceButton" destination="SBs-HV-3TV" id="8QR-Cy-w1Y"/>
                         <outlet property="profileImageView" destination="IX9-9C-BAC" id="lJe-qW-jBN"/>
@@ -315,16 +317,30 @@
             </objects>
             <point key="canvasLocation" x="1760.8" y="-180.35982008995504"/>
         </scene>
-        <!--View Controller-->
+        <!--Skills-->
         <scene sceneID="P9j-o6-fkC">
             <objects>
-                <viewController id="IVz-ce-ttY" sceneMemberID="viewController">
+                <viewController title="Skills" id="IVz-ce-ttY" customClass="ViewController" customModule="OskarArctaediusCV" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0yh-zK-I0Q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X9n-qP-BD7" userLabel="skillsImageView">
+                                <rect key="frame" x="16" y="80" width="343" height="571"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6El-FZ-pwY" firstAttribute="bottom" secondItem="X9n-qP-BD7" secondAttribute="bottom" constant="16" id="7gh-gI-Nfy"/>
+                            <constraint firstItem="X9n-qP-BD7" firstAttribute="top" secondItem="6El-FZ-pwY" secondAttribute="top" constant="16" id="9IJ-eh-TTp"/>
+                            <constraint firstItem="X9n-qP-BD7" firstAttribute="leading" secondItem="6El-FZ-pwY" secondAttribute="leading" constant="16" id="TUx-oS-sCT"/>
+                            <constraint firstItem="6El-FZ-pwY" firstAttribute="trailing" secondItem="X9n-qP-BD7" secondAttribute="trailing" constant="16" id="Yt1-rt-e5a"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6El-FZ-pwY"/>
                     </view>
+                    <connections>
+                        <outlet property="skillsImageView" destination="X9n-qP-BD7" id="O4a-Kw-bJm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kjZ-s6-ec2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

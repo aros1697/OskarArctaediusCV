@@ -8,11 +8,17 @@
 
 import UIKit
 
+let skillImgAnimation = imageAnimation()
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var experienceButton: UIButton!
     @IBOutlet weak var skillsButton: UIButton!
+    @IBOutlet weak var skillsImageView: UIImageView!
+    
+    let startSkillAnimation = skillImgAnimation.getSkillsAnimation()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,6 +29,14 @@ class ViewController: UIViewController {
         self.experienceButton.clipsToBounds = true
         self.skillsButton.layer.cornerRadius = 20
         self.skillsButton.clipsToBounds = true
+        
+        skillsImageView.animationImages = startSkillAnimation
+        skillsImageView.animationDuration = 10.0
+        skillsImageView.startAnimating()
+        
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
     }
 
 }
